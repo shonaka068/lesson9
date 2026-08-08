@@ -5,7 +5,6 @@ if 'user_name' in st.session_state and st.session_state.user_name:
     st.success(f"こんにちは、{st.session_state.user_name}さん！")
     st.write("メインページで入力された名前が正しく表示されています。")
 # 追加の表示
-    st.balloons()  # 祝福のアニメーション
 else:
     st.error("ユーザー名が設定されていません")
     st.write("メインページで名前を入力してください")
@@ -31,7 +30,7 @@ else:
     st.error("趣味が設定されていません")
     st.write("メインページで趣味を選択してください")
 
-if st.session_state.syumi==["ゲーム"]:
+if 'syumi' in st.session_state and "ゲーム" in st.session_state.syumi:
     st.write("ゲーム作りにも挑戦しよう！")
     st.balloons()  # 祝福のアニメーション
     
