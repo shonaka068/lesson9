@@ -8,4 +8,4 @@ if st.button("情報をリセット"):
         st.session_state.age = ""
         st.session_state.gakunenn = ""
         st.session_state.syumi = ""
-        st.success("ユーザー情報がリセットされました")
+st.success("ユーザー情報がリセットされました")
