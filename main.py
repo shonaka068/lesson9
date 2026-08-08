@@ -11,3 +11,5 @@ import streamlit as st
 #     st.session_state.name=name
 
 # st.write(f"記憶している名前:{st.session_state.name}")
+
+st.write("あいさつするアプリ")
