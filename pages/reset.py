@@ -4,7 +4,7 @@ st.title("ユーザー情報リセット")
 
 st.write("保存されているユーザー情報をリセットします")
 # 現在の情報を表示
-if st.session_state.get('user_name')or st.session_state.get('gakunenn') or st.session_state.get('age') or st.session_state.get('syumi'):
+if st.session_state.get('user_name') or st.session_state.get('gakunenn') or st.session_state.get('age') or st.session_state.get('syumi'):
     st.info("現在保存されている情報:")
     st.write(f"名前: {st.session_state.get('user_name', '未設定')}")
     st.write(f"学年: {st.session_state.get('gakunenn', '未設定')}")
