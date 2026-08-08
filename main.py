@@ -16,6 +16,8 @@ def session_hensu():
 def detanyuryoku():
     name=st.text_input("あなたの名前を入力してください")
     if st.button("名前を保存"):
+        if not name:
+            st.warning("名前を入力してください")
         st.session_state.user_name=name
         st.success(f"名前を保存しました")
     st.write(f"現在保存されている名前: {st.session_state.user_name}")
