@@ -29,7 +29,7 @@ def detanyuryoku():
     age=st.slider("年齢を選択してください", 11,15,11)
     if st.button("年齢を保存"):
         st.session_state.age=age
-       st.success(f"年齢を保存しました")
+        st.success(f"年齢を保存しました")
     st.write(f"現在保存されている年齢: {st.session_state.age}")
 
     syumi=st.multiselect("趣味を入力してください", ["読書", "スポーツ", "音楽", "ゲーム", "絵画","その他"])
