@@ -18,8 +18,9 @@ def detanyuryoku():
     if st.button("名前を保存"):
         if not name:
             st.warning("名前を入力してください")
-        st.session_state.user_name=name
-        st.success(f"名前を保存しました")
+        else:
+            st.session_state.user_name=name
+            st.success(f"名前を保存しました")
     st.write(f"現在保存されている名前: {st.session_state.user_name}")
 
     gakunenn=st.selectbox("学年を選択してください", ["小学５年生", "小学６年生", "中学１年生", "中学２年生", "中学３年生"])
