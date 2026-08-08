@@ -30,3 +30,8 @@ if 'syumi' in st.session_state and st.session_state.syumi:
 else:
     st.error("趣味が設定されていません")
     st.write("メインページで趣味を選択してください")
+
+if st.session_state.syumi==["ゲーム"]:
+    st.write("ゲーム作りにも挑戦しよう！")
+    st.balloons()  # 祝福のアニメーション
+    
